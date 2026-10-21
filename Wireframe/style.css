@@ -18,7 +18,7 @@ As well as useful links to learn more */
 ====== Design Palette ====== */
 :root {
   --paper: oklch(7 0 0);
-  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --ink: color-mix(in oklab, var(--color) 5%, rgb(10, 9, 9));
   --font: 100%/1.5 system-ui;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
@@ -52,6 +52,9 @@ main {
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
+  background: var(--paper);
+  border-top: var(--line);
   text-align: center;
 }
 /* ====== Articles Grid Layout ====
