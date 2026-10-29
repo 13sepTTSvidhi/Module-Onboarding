@@ -14,30 +14,38 @@
     <main>
       <!-- Requirement 1: Use semantic HTML elements to structure the form. -->
       <form>
-         <label for="first-name">First Name:</label>
-         <input type="text" id="first-name" name="first-name" minlength="2" required> <br><br>
-         <label for="last-name">Last Name:</label>
-         <input type="text" id="last-name" name="last-name" minlength="2" required> <br><br> 
+      <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" minlength="2" required> 
+      </div> <br>
+      <div>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" minlength="2" required> 
+      </div> <br>
 
         <!-- Requirement 2: Every input has an associated label -->
 
-      <label for="Email">Email:</label>
-      <input type="email" id="Email" name="Email" placeholder="Email address" required> <br><br>
+      <div>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" placeholder="Email address" required>
+      </div> <br>
       
         <!-- Requirement 3: The email field is required and uses HTML email validation -->
-
-       <fieldset>
+      
+      <div>
+      <fieldset>
         <legend>Choose a colour:</legend>
         <label> <input type="radio" name="colour" value="red" required> Red </label>
         <label> <input type="radio" name="colour" value="black"> Black </label>
         <label> <input type="radio" name="colour" value="blue"> Blue </label>
-      </fieldset> <br>
-
+      </fieldset> 
+      </div> <br>
+        
         <!-- Requirement 4:Radio buttons allow the user to select one of three colours -->
 
-     <label for="size">Choose your T-shirt size:</label>
-     
-     <select id="size" name="size" required> 
+      <div>
+        <label for="size">Choose your T-shirt size:</label>
+      <select id="size" name="size" required> 
         <option value="">Select a size</option>
         <option value="XS">Extra small (XS)</option>
         <option value="S">Small (S)</option>
@@ -45,17 +53,21 @@
         <option value="L">Large (L)</option>
         <option value="XL">Extra Large (XL)</option>
         <option value="XXL">Double Extra Large (XXL)</option>
-     </select> <br><br>
+      </select> 
+      </div> <br>
 
        <!-- Requirement 5:The select and option tags allow the user to choose one size from given drop down options -->
 
-     <button type="submit">Submit</button>
-      
+      <div>
+        <button type="submit">Submit</button>
+      </div>
       </form>
     </main>
-    <footer>
+      <div>  
+      <footer>
       <!-- Vidhi Pandya -->
-      <h2>© 2026 T-Shirt Store. All rights reserved.</h2>
-    </footer>
+        <h2>© 2026 T-Shirt Store. All rights reserved.</h2>
+      </footer>
+      </div> 
   </body>
 </html>
